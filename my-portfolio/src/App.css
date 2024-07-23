@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  background-color: #101010;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-icons-container {
+  display: flex;
+  gap: 1rem; /* Add spacing between the icons */
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #32cd32;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.nav-icon:hover {
+  transform: scale(1.1);
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.highlight {
+  color: #50c878;
+}
+
+.highlight2 {
+  color: #d7dbd9;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-paragraph {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home-button-container {
+  margin-right: auto; /* Ensure the home button stays on the left */
+}
