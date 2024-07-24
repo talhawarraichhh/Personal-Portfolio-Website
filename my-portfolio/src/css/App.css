@@ -158,8 +158,9 @@ nav a:hover {
 
 .contact-items {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
 
 .contact-item {
@@ -220,11 +221,11 @@ nav a:hover {
 }
 
 .resume-button {
-  background-color: #50c878;
+  background-color: #333;
 }
 
 .resume-button:hover {
-  background-color: #3da862;
+  background-color: #333;
 }
 
 .front-end {
