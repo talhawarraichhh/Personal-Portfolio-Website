@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./css/App.css"; // Ensure correct path
+import "./css/App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import NavBar from "./components/NavBar";
@@ -7,6 +7,7 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import TechnicalSkills from "./components/TechnicalSkills";
+import WorkExperience from "./components/WorkExperience";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       <About />
       <Contact />
       <TechnicalSkills />
+      <WorkExperience />
     </div>
   );
 }
