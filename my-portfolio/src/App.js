@@ -8,6 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import TechnicalSkills from "./components/TechnicalSkills";
 import WorkExperience from "./components/WorkExperience";
+import Projects from "./components/Projects";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
       <Contact />
       <TechnicalSkills />
       <WorkExperience />
+      <Projects />
     </div>
   );
 }
