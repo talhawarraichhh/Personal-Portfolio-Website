@@ -58,7 +58,7 @@ const ContactMe = () => {
               <img src={linkedinIcon} alt="LinkedIn" />
             </a>
             <a
-              href="https://github.com/yourgithub"
+              href="https://github.com/talhawarraichhh"
               target="_blank"
               rel="noopener noreferrer"
               className="contactme-social-icon"

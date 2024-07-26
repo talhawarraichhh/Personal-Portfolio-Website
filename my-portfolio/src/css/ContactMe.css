@@ -52,11 +52,12 @@
 }
 
 .contactme-item {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  word-break: break-word;
 }
 
 .contactme-icon {
@@ -131,5 +132,30 @@
 
   .contactme-header {
     margin-top: 100px;
+  }
+
+  .contactme-item {
+    font-size: 0.9rem;
+    align-items: flex-start;
+  }
+
+  .contactme-info,
+  .contactme-form {
+    padding: 20px;
+  }
+
+  .contactme-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contactme-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
   }
 }
