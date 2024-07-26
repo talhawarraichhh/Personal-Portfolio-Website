@@ -52,6 +52,7 @@
 }
 
 .contactme-item {
+  font-size: 1.0rem;
   font-weight: 600;
   display: flex;
   align-items: center;
