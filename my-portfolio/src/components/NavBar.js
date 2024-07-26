@@ -3,6 +3,13 @@ import HomeButton from "./HomeButton";
 import linkedinLogo from "../images/linkedin.png";
 import emailLogo from "../images/email.png";
 import githubLogo from "../images/github.png";
+// import Intro from "./Intro";
+// import About from "./About";
+// import Contact from "./Contact";
+// import TechnicalSkills from "./TechnicalSkills";
+// import WorkExperience from "./WorkExperience";
+// import Projects from "./Projects";
+// import ContactMe from "./ContactMe";
 
 const NavBar = () => {
   return (
@@ -13,22 +20,22 @@ const NavBar = () => {
         </li>
         <div className="nav-items-container">
           <li>
-            <a href="#">HOME</a>
+            <a href="#home">HOME</a>
           </li>
           <li>
-            <a href="#">ABOUT</a>
+            <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="#">SKILLS</a>
+            <a href="#skills">SKILLS</a>
           </li>
           <li>
-            <a href="#">EXPERIENCE</a>
+            <a href="#experience">EXPERIENCE</a>
           </li>
           <li>
-            <a href="#">PORTFOLIO</a>
+            <a href="#portfolio">PORTFOLIO</a>
           </li>
           <li>
-            <a href="#">CONTACT</a>
+            <a href="#contact">CONTACT</a>
           </li>
         </div>
         <div className="nav-icons-container">

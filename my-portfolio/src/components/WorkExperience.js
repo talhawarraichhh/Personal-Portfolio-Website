@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../css/WorkExperience.css";
 import headstarterLogo from "../images/headstarter.jpeg";
 import favoriteFlyerLogo from "../images/favorite.jpg";
 import schulichIgniteLogo from "../images/schulich.jpg";
 
 const WorkExperience = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 200,
+    });
+  }, []);
+
   return (
-    <div className="work-experience-container" data-aos="fade-up">
-      <h2 className="work-experience-header">Work Experience</h2>
-      <div className="work-experience-item">
+    <div className="work-experience-container">
+      <h2 className="work-experience-header" data-aos="fade-up">
+        Work Experience
+      </h2>
+      <div className="work-experience-item" data-aos="fade-up">
         <div className="work-experience-dates">July 2024 – September 2024</div>
         <div className="work-experience-content">
           <div className="company-header">
@@ -38,7 +50,7 @@ const WorkExperience = () => {
           </ul>
         </div>
       </div>
-      <div className="work-experience-item">
+      <div className="work-experience-item" data-aos="fade-up">
         <div className="work-experience-dates">May 2023 – December 2023</div>
         <div className="work-experience-content">
           <div className="company-header">
@@ -68,7 +80,7 @@ const WorkExperience = () => {
           </ul>
         </div>
       </div>
-      <div className="work-experience-item">
+      <div className="work-experience-item" data-aos="fade-up">
         <div className="work-experience-dates">
           September 2023 – December 2023
         </div>

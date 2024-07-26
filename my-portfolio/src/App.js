@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import TechnicalSkills from "./components/TechnicalSkills";
 import WorkExperience from "./components/WorkExperience";
 import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   useEffect(() => {
@@ -16,7 +17,7 @@ function App() {
       duration: 1000,
       easing: "ease-in-out",
       offset: 200,
-      once: true,
+      once: false,
     });
     AOS.refresh(); // Ensure AOS refreshes after initializing
   }, []);
@@ -24,12 +25,25 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Intro />
-      <About />
+      <section id="home">
+        <Intro />
+      </section>
+      <section id="about">
+        <About />
+      </section>
       <Contact />
-      <TechnicalSkills />
-      <WorkExperience />
-      <Projects />
+      <section id="skills">
+        <TechnicalSkills />
+      </section>
+      <section id="experience">
+        <WorkExperience />
+      </section>
+      <section id="portfolio">
+        <Projects />
+      </section>
+      <section id="contact">
+        <ContactMe />
+      </section>
     </div>
   );
 }

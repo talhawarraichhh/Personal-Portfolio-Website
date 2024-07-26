@@ -8,12 +8,11 @@
 
 .work-experience-header {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #50c878;
   margin-top: 250px;
   margin-bottom: 60px;
   text-align: center;
-  font-weight: 700;
   letter-spacing: 1px;
   text-transform: capitalize;
 }
@@ -25,7 +24,16 @@
   margin-bottom: 30px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* Start with 0 opacity for fade-in effect */
+  transform: translateY(20px); /* Start slightly below for fade-up effect */
 }
+
+.work-experience-item.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Rest of your CSS remains the same */
 
 .work-experience-item:hover {
   transform: translateY(-5px);
